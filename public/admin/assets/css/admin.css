@@ -1,0 +1,572 @@
+:root {
+	--primary-color: #9933CC;
+	--white-color: #fff;
+
+}
+
+body {
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 62.5%;
+	margin: 0 auto;
+}
+
+a {
+	text-decoration: none !important;
+	cursor: pointer;
+}
+
+button {
+	cursor: pointer;
+}
+
+.btn-add {
+	background-color: var(--primary-color);
+	font-size: 15px;
+	padding: 7px;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.btn-add a {
+	color: #fff !important;
+}
+
+/* Pagination  */
+/* .product__pagination {
+	height: 4.5rem;
+	margin-left: 40%;
+}
+
+.product__pagination a {
+	color: #333;
+	float: left;
+	padding: 12px 18px;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.product__pagination a.active {
+	background-color: var(--primary-color);
+	color: white;
+	border-radius: 50%;
+}
+
+.product__pagination a:hover:not(.active) {
+	background-color: var(--primary-color);
+	border-radius: 50%;
+	color: #fff;
+} */
+.paginate {
+	justify-content: center;
+	display: flex;
+	list-style: none;
+	padding-top: 10px;
+}
+
+/* Dropdown  */
+.box_logout {
+	display: none;
+}
+
+.icon__login:hover+.box_logout {
+	display: block;
+	margin-top: 100px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+}
+
+/* Header  */
+.grid {
+	width: 1200px;
+	min-width: 100%;
+}
+
+.header {
+	background-color: #6d74f3;
+	height: 3rem;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 10px;
+	display: flex;
+	align-items: center;
+	justify-content: end;
+}
+
+.header__icon {
+	padding: 15px;
+}
+
+.icon__login {
+	padding: 13px;
+	font-size: 15px;
+	color: var(--white-color);
+}
+
+.icon__login>span {
+	padding-right: 10px;
+}
+
+.icon__login>a {
+	color: #fff;
+}
+
+.wrap {
+	display: flex;
+}
+
+.menu {
+	width: 16%;
+	background-color: #4e73df;
+	padding: 15px;
+	min-height: 100vh;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 10px;
+
+}
+
+.menu .menu__list {
+	list-style: none;
+	padding-left: 5px;
+}
+
+.menu .menu__list li {
+	display: block;
+}
+
+.menu .menu__list li a {
+	display: block;
+	font-size: 15px;
+	line-height: 1.2;
+	text-decoration: none;
+	padding: 1rem 0;
+	position: relative;
+	color: #fff;
+}
+
+.menu-sub li a {
+	font-size: 15px !important;
+}
+
+.menu .menu__list li ul {
+	list-style: none;
+	display: none;
+}
+
+.menu .menu__list li.has-child>a .icon {
+	position: absolute;
+	right: 0;
+	top: 15px;
+	width: 20px;
+	height: 20px;
+	background-size: 14px;
+	transition: all 0.3s ease-in-out;
+	color: #fff;
+}
+
+.menu .menu__list li.has-child.menu-open>a .icon {
+	transform: rotate(180deg);
+	margin-top: 3px;
+}
+
+.menu .menu__list li.has-child.menu-open>ul {
+	display: block;
+}
+
+.menu-active {
+	color: #CC99FF !important;
+}
+
+.content {
+	width: 82%;
+	padding: 10px 20px;
+	height: auto;
+
+}
+
+/* Manager-product  */
+.product-search {
+	background-color: #efe9e9;
+	padding: 7px;
+	border-radius: 5px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 10px
+}
+
+.form-search {
+	display: flex;
+}
+
+.form-search input[type=text] {
+	border: none;
+	height: 38px;
+	width: 250px;
+	border-radius: 5px;
+	outline: none;
+}
+
+.btn-search {
+	border: none;
+	padding: 7px;
+	border-radius: 5px;
+	background-color: rgb(17, 226, 80);
+}
+
+.manager-form {
+	padding: 20px 10px;
+}
+
+.manager-cate {
+	padding: 20px 10px;
+}
+
+.card__title {
+	padding: 5px 15px;
+	margin-bottom: 0;
+	background-color: rgba(0, 0, 0, .03);
+	border-bottom: 1px solid rgba(0, 0, 0, .125)
+}
+
+.card__title>p {
+	font-size: 17px;
+	margin-block-end: 0;
+	font-weight: 600;
+	padding: 5px;
+}
+
+.table-manager {
+	border-radius: 8px;
+	overflow: auto;
+	/* margin-top: 15px; */
+	padding: 20px 10px;
+}
+
+.title-table {
+	padding: 12px;
+	background-color: #333;
+	color: #fff;
+	margin-block-end: 0;
+	font-size: 16px;
+}
+
+table,
+th,
+td {
+	border: 1px solid #ccc;
+}
+
+thead {
+	font-size: 15px;
+}
+
+tbody {
+	font-size: 14px;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+	background-color: #fff;
+	user-select: none;
+	border: 1px solid #ccc;
+}
+
+td img {
+	max-width: 100%;
+	width: 80px;
+	height: 50px;
+}
+
+i.edit {
+	color: rgb(7, 128, 37);
+	font-size: 25px;
+}
+
+i.hide {
+	color: rgb(190, 0, 0);
+	font-size: 25px;
+}
+
+/* Edit product  */
+.edit-product {
+	padding: 10px;
+	border: 1px solid #ccc;
+}
+
+.edit-title h4 {
+	font-size: 20px;
+}
+
+.form-edit-product {
+	padding: 0 20px;
+	display: flex;
+}
+
+.form-edit-left {
+	width: 50%;
+}
+
+.form-product-input {
+	display: flex;
+}
+
+.form-group-product {
+	display: flex;
+	width: 50%;
+	margin-right: 20px;
+	padding: 5px 0;
+	font-size: 16px;
+	align-items: center;
+}
+
+.form-group-product label {
+	width: 170px;
+}
+
+.form-group-product select {
+	padding: 8px 5px;
+	width: 70%;
+}
+
+.form-group-product input[type=text],
+.form-group-product input[type=number],
+.form-group-product input[type=date],
+.form-group-product textarea[type=text] {
+	padding: 5px 5px;
+	width: 70%;
+}
+
+.form-group {
+	display: flex;
+	/* padding: 5px 15px 5px 0; */
+	font-size: 16px;
+	align-items: center;
+}
+
+.form-group select {
+	padding: 6px 5px;
+	width: 100%;
+}
+
+.form-group label {
+	width: 180px;
+}
+
+.form-group input[type=text],
+input[type=number],
+input[type=date],
+textarea[type=text] {
+	padding: 7px 5px;
+	width: 100%;
+}
+
+.form-group input[type=radio] {
+	padding-right: 10px;
+}
+
+.tes {
+	padding: 5px;
+}
+
+.group-btn-edit {
+	padding: 20px 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.group-btn-edit .btn-back {
+	padding: 10px;
+	font-size: 16px;
+	background-color: var(--primary-color);
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+}
+
+.group-btn-edit .btn-save {
+	padding: 10px;
+	font-size: 16px;
+	background-color: green;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+i.image {
+	font-size: 50px;
+	color: rgb(61, 41, 41);
+}
+
+
+/* Login  */
+.page-login {
+	background-color: #FF99CC;
+	padding: 5% 35%;
+	height: 620px;
+}
+
+.login-container {
+	width: 400px;
+	border-radius: 5px;
+	border: 1px solid rgb(221, 218, 218);
+	box-shadow: 1px 1px 1px rgb(218, 212, 212);
+	height: auto;
+	background-color: #fff;
+}
+
+.title-login {
+	background-color: rgb(240, 234, 234);
+	text-align: center;
+	padding: 15px;
+	margin-block-start: 0;
+	font-size: 19px;
+	font-weight: 500;
+}
+
+.login {
+	padding: 15px;
+}
+
+.login-form-group {
+	padding: 5px;
+	font-size: 15px;
+}
+
+.login input[type='text'],
+input[type='password'],
+input[type='email'] {
+	padding: 8px;
+	margin: 5px;
+	width: 100%;
+	border: 1px solid #debefd;
+	border-radius: 5px;
+	outline: none;
+}
+
+.login-btn {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 2px;
+	align-items: center;
+}
+
+.login-btn a {
+	color: blue;
+	font-size: 13px;
+}
+
+.login-btn button {
+	border: none;
+	background-color: green;
+	padding: 10px;
+	border-radius: 5px;
+	color: #fff;
+}
+
+/* Error  */
+ul.error {
+	margin-bottom: 0 !important;
+	padding: 5px;
+	margin-left: 140px;
+}
+
+.error {
+	color: red;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.alert-danger {
+	/* margin-left: 10px; */
+	color: red;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.alert-success {
+	margin-left: 10px;
+	color: green;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+/* Style Modal  */
+.modal-content.w70 {
+	width: 70%;
+	margin-left: 15%;
+	font-size: 15px;
+}
+
+.modal-content.w70 .modal-footer {
+	justify-content: space-between;
+}
+
+.toggle.ios,
+.toggle-on.ios,
+.toggle-off.ios {
+	border-radius: 20rem;
+	width: 40px !important;
+	height: 20px !important;
+}
+
+.toggle.ios .toggle-handle {
+	border-radius: 20rem;
+	width: 40px !important;
+	height: 20px !important;
+
+}
+
+.table-detail {
+	width: 65%;
+	margin-left: 35%;
+	margin-top: 10px;
+}
+
+table.table-detail>tbody>tr>td>img {
+	width: 100px !important;
+	height: auto;
+}
+
+table.table-detail>tbody>tr>td.img-detail {
+	text-align: center;
+}
+
+.frame-totals {
+	width: 100%;
+	float: right;
+}
+
+.frame-totals>b {
+	float: right;
+	padding: 20px 5px;
+}
+
+.receive {
+	color: black;
+	font-weight: 600;
+	text-align: center;
+}
+
+.receive {
+	color: black;
+	font-weight: 600;
+	text-align: center;
+}
+
+.transport {
+	color: blue;
+	font-weight: 600;
+	text-align: center;
+
+}
+
+.confirm {
+	color: green;
+	font-weight: 600;
+	text-align: center;
+}
+
+.cancel {
+	color: red;
+	font-weight: 600;
+	text-align: center;
+}
